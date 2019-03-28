@@ -12,7 +12,7 @@ The Toolbox contains:
   - sar.m colormap for the interfergrams (in the Matlab format)
   - card_raw.input: input card to run the computation_Sentinel_SM.m function. 
   
-The others requirements:
+The other requirements:
   - xml2struct.m
   - ToolBox Envi for Matlab to create the UTM products
   - ToolBox Mapping of Matlab to create the DEM geometry products
