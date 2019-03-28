@@ -170,6 +170,3 @@ Mode_O2I:               YES        Extr_Lidar2010_5m_BLID.r4.hdr #For the SNOV O
 The contributors are:
   - Alexis Hrysiewicz (Laboratoire Magmas et Volcans)
   - Delphine Smittarello (IsTerre)
-  
-# License
-The current license of the software is LGPL v3.0.
