@@ -18,19 +18,37 @@ The others requirements:
   - ToolBox Mapping of Matlab to create the DEM geometry products
   - The readSent1Data.m function to read the SLC images by Louis-Philippe Rousseau
   - The getTIFFinfo.m function to read the tiff informations by Louis-Philippe Rousseau
+
 The links to find the Matlab files are: 
   - https://fr.mathworks.com/matlabcentral/fileexchange/28518-xml2struct
   - https://fr.mathworks.com/matlabcentral/fileexchange/27172-envi-file-reader-writer
+  
+The functions by Louis-Philippe Rousseau can be fund in his Github: 
   - https://github.com/lprouss/sent1-L1-utilities
   
 System requirements: 
   - Linux / Mac (using of the bash language)
 
-# Installation
-```sh
-Installation of Doris 5.0: 
-```
+# Installation 
 
+1) Installation of Doris 5.0: https://github.com/TUDelftGeodesy/Doris
+2) Download of the Toolbox
+3) Download of the files in Mathworks website
+
+# How to compute a S1 StripMap interferogram
+
+1) Download of the two S1 StripMap SLC
+2) Download of the orbit files (optionnal)
+3) Creating of the full input card or the incomplet input card
+4) Running of Matlab 
+
+```sh
+computation_computation_Sentinel_SM('full_path_of_input_car')
+```
+or
+```sh
+computation_Sentinel_SM('path_input_card.input',path_EXEC,path_MASTER,path_SLAVE,pol)
+```
 
 # Authors / developers
 
