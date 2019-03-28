@@ -33,14 +33,14 @@ System requirements:
 
 1) Installation of Doris 5.0: https://github.com/TUDelftGeodesy/Doris
 2) Download of the Toolbox
-3) Download of the files in Mathworks website
+3) Download of the files from the Mathworks website
 
 # How to compute a S1 StripMap interferogram
 
 1) Download of the two S1 StripMap SLC
 2) Download of the orbit files (optionnal)
 3) Creating of the full input card or the incomplet input card
-4) Running of Matlab 
+4) In Matlab 
 
 ```sh
 computation_computation_Sentinel_SM('full_path_of_input_car')
@@ -48,6 +48,120 @@ computation_computation_Sentinel_SM('full_path_of_input_car')
 or
 ```sh
 computation_Sentinel_SM('path_input_card.input',path_EXEC,path_MASTER,path_SLAVE,pol)
+```
+# An input card example:
+
+```sh
+***************************************************************************
+***************************************************************************
+Parameters to compute the Sentinel 1 StripMap Interferogram
+***************************************************************************
+***************************************************************************
+By Alexis Hrysiewicz (LMV / OPGC / UCA / INSU)
+
+***************************************************************************
+Doris Parameters
+***************************************************************************
+Path_of_Doris_processor:            /usr/local/Doris_5
+Path_of_Doris_function:             /usr/local/Doris_utility
+Path_of_MATLAB_Sentinel_Toolbox:    /home/alexis/Documents/MATLAB/Sentinel_SM_toolbox
+***************************************************************************
+Global parameters
+***************************************************************************
+Path_for_the_excecution:    
+Data_of_the_Master:         
+Data_of_the_Slave:          
+Choice_of_the_polarition:   
+
+Path_of_orbits:             /media/alexis/InSAR_Alexis_3/SLC_Sentinel/Orbits_Sentinel_S1A_S1B/Orbits/precise
+
+Name_of_the_input:          date
+Colormap_of_the_display:    /home/alexis/Documents/MATLAB/Sentinel_SM_toolbox/cmap_sar.csv
+RAM_Memory_(MB):            4000
+
+***************************************************************************
+Parameters of the DEM
+***************************************************************************
+Path_of_the_DEM:            /media/alexis/InSAR_Alexis_3/DEM/completed_2010_SE_5pt0_nullSea_octobre_2010_lat_long_6000_4500_no_neg_zero.r4
+Number_of_lines:            6000
+Number_of_pixels:           4500
+Latitude_DEM:               -21.120188665673709
+Longitude_DEM:              55.621056452106814
+Delta_Latitude:             4.5159010634e-005
+Delta_Longitude:            4.8160955554e-005
+Value_of_NO_data:           0
+
+***************************************************************************
+Processing Parameters 
+***************************************************************************
+Extraction ------------------------------- YES
+First_line_master:     16600
+Last_line_master:      19680
+First_pixel_master:    6850
+Last_pixel_master:     10120
+First_line_slave:      16600
+Last_line_slave:       19680
+First_pixel_slave:     6850
+Last_pixel_slave:      10120
+
+Multilooking ----------------------------- NO
+In_Azimuth:     2
+In_Range:       2
+
+Master_Timing ---------------------------- YES
+MTE_NWIN        30
+MTE_INITOFF     0 0
+MTE_WINSIZE     1024 512
+
+Coarse_Correlation ----------------------- YES
+CC_NWIN         21
+CC_WINSIZE      1024 512
+CC_INITOFF      orbit
+
+Fine_Correlation ------------------------- YES
+The default parameters are fine. 
+
+DEM_Correlation -------------------------- NO
+For the next version
+
+Resample_of_the_slave -------------------- YES
+RS_METHOD       rc12p
+
+Interferogram_formation ------------------ YES
+FE_DEGREE       5
+FE_NPOINTS      501
+SRP_METHOD      polynomial
+
+Computation_of_topo_Phase ---------------- YES
+The default parameters are fine.
+
+Substraction_of_the_topo_Phase ----------- YES
+The default parameters are fine.
+
+Filter_of_the_phase  --------------------- YES
+PF_METHOD       goldstein
+PF_ALPHA        0.125
+PF_BLOCKSIZE    64
+PF_OVERLAP      16
+
+Coherence_formation ---------------------- YES
+COH_WINSIZE     3 3
+
+Geolocalisation  ------------------------- YES
+On the DEM grid
+
+***************************************************************************
+Finalisation of the processing 
+***************************************************************************
+Removing_the_unused_files: YES
+
+GEOTIFF_creating  ------------------------ YES
+Latitude_extention:     -21.315     -21.19                               
+Longitude_extention:    55.672      55.825      
+Step_latitude:          4.5159010634e-005          
+Step_longitude:         4.8160955554e-005 
+Method_Geotiff:         natural
+Mode_O2I:               YES         /media/alexis/Data_Alexis/MNT/MNT_corriges/Extr_Lidar2010_5m_BLID.r4.hdr
 ```
 
 # Authors / developers
