@@ -62,49 +62,49 @@ By Alexis Hrysiewicz (LMV / OPGC / UCA / INSU)
 ***************************************************************************
 Doris Parameters
 ***************************************************************************
-Path_of_Doris_processor:            /usr/local/Doris_5
-Path_of_Doris_function:             /usr/local/Doris_utility
-Path_of_MATLAB_Sentinel_Toolbox:    /home/alexis/Documents/MATLAB/Sentinel_SM_toolbox
+Path_of_Doris_processor:            /usr/local/Doris_5 #Directory of Doris core
+Path_of_Doris_function:             /usr/local/Doris_utility #Directory of Cpxfiddle function
+Path_of_MATLAB_Sentinel_Toolbox:    #Directory of Sentinel SM Toolbox
 ***************************************************************************
 Global parameters
 ***************************************************************************
-Path_for_the_excecution:    
-Data_of_the_Master:         
-Data_of_the_Slave:          
-Choice_of_the_polarition:   
+Path_for_the_excecution:    #Where do you can compute the interferogram
+Data_of_the_Master:         #Full path of the Master (.zip or .SAFE) 
+Data_of_the_Slave:          #Full path of the Slave (.zip or .SAFE) 
+Choice_of_the_polarition:   #vv, hh, vh, or hv 
 
-Path_of_orbits:             /media/alexis/InSAR_Alexis_3/SLC_Sentinel/Orbits_Sentinel_S1A_S1B/Orbits/precise
+Path_of_orbits:             #Directory of the orbit file 
 
-Name_of_the_input:          date
+Name_of_the_input:          #date or #orbits
 Colormap_of_the_display:    /home/alexis/Documents/MATLAB/Sentinel_SM_toolbox/cmap_sar.csv
 RAM_Memory_(MB):            4000
 
 ***************************************************************************
 Parameters of the DEM
 ***************************************************************************
-Path_of_the_DEM:            /media/alexis/InSAR_Alexis_3/DEM/completed_2010_SE_5pt0_nullSea_octobre_2010_lat_long_6000_4500_no_neg_zero.r4
-Number_of_lines:            6000
-Number_of_pixels:           4500
-Latitude_DEM:               -21.120188665673709
-Longitude_DEM:              55.621056452106814
-Delta_Latitude:             4.5159010634e-005
-Delta_Longitude:            4.8160955554e-005
+Path_of_the_DEM:            #Full path of the DEM file 
+Number_of_lines:            1000
+Number_of_pixels:           1000
+Latitude_DEM:               0
+Longitude_DEM:              0
+Delta_Latitude:             0.1
+Delta_Longitude:            0.1
 Value_of_NO_data:           0
 
 ***************************************************************************
-Processing Parameters 
+Processing Parameters #See Doris manuel for these parameters
 ***************************************************************************
 Extraction ------------------------------- YES
-First_line_master:     16600
+First_line_master:     1
 Last_line_master:      19680
-First_pixel_master:    6850
+First_pixel_master:    1
 Last_pixel_master:     10120
-First_line_slave:      16600
+First_line_slave:      1
 Last_line_slave:       19680
-First_pixel_slave:     6850
+First_pixel_slave:     1
 Last_pixel_slave:      10120
 
-Multilooking ----------------------------- NO
+Multilooking ----------------------------- YES
 In_Azimuth:     2
 In_Range:       2
 
@@ -156,12 +156,12 @@ Finalisation of the processing
 Removing_the_unused_files: YES
 
 GEOTIFF_creating  ------------------------ YES
-Latitude_extention:     -21.315     -21.19                               
-Longitude_extention:    55.672      55.825      
-Step_latitude:          4.5159010634e-005          
-Step_longitude:         4.8160955554e-005 
+Latitude_extention:     0   0                              
+Longitude_extention:    1   1  
+Step_latitude:          0.1         
+Step_longitude:         0.1
 Method_Geotiff:         natural
-Mode_O2I:               YES         /media/alexis/Data_Alexis/MNT/MNT_corriges/Extr_Lidar2010_5m_BLID.r4.hdr
+Mode_O2I:               YES        Extr_Lidar2010_5m_BLID.r4.hdr #For the SNOV OI2
 ```
 
 # Authors / developers
