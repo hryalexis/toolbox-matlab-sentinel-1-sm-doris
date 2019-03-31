@@ -1,6 +1,6 @@
 function read_data_Sentinel_SM(slc_path,header_path,path_Exec,Mode,val_extraction,first_line,last_line,first_pixel,last_pixel,orb_path)
 % Function to read the Sentinel StripMap data and to create the files (.slc and .res) for
-% Doris. The extraction of the ROI and the orbit reading are done here. The
+% Doris. The extraction of ROI and orbit reading are done here. The
 % function is the same for the master and the slave (input "Mode"). The
 % user must not manually run this function.
 %
