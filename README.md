@@ -162,7 +162,7 @@ Longitude_extention:    1   1
 Step_latitude:          0.1         
 Step_longitude:         0.1
 Method_Geotiff:         natural
-Mode_O2I:               YES        Extr_Lidar2010_5m_BLID.r4.hdr #For the SNOV OI2
+Mode_O2I:               YES        dem.hdr #For the SNOV OI2
 ```
 
 # Authors
