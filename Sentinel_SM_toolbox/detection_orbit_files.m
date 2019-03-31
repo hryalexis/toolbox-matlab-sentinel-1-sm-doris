@@ -1,6 +1,3 @@
-%% Function to detecte the orbit file inside the orbit directory
-%By Alexis HRYSIEWICZ Laboratoire Magmas et Volcans
-
 function [precised,restitued] = detection_orbit_files(path_orbit,date,sat)
 % Function to detect the good orbit file by acquisition. The function
 % creates the list of the orbits files stocked in the same directory
@@ -10,11 +7,11 @@ function [precised,restitued] = detection_orbit_files(path_orbit,date,sat)
 % This function is ran by read_data_Sentinel_SM.m
 %
 % The order: 
-%   - To search a possible precise orbit file 
+%   - The research of possible precise orbit file 
 %       if not
-%           - To search a possible restitued orbit file 
+%           - The research of possible restitued orbit file 
 %               if not 
-%                   - To use the orbit in the .SAFE directory. 
+%                   - The use of the orbit in the .SAFE directory. 
 %
 % System requirements: 
 %   - Linux / Mac (using of the bash language)
@@ -24,7 +21,7 @@ function [precised,restitued] = detection_orbit_files(path_orbit,date,sat)
 %Updates: 
 %   - Created : October 2018
 %   - Fixed the bugs with the name of satellite (November 2018)
-%   - Fixed for the bugs with the matrix initialisation (March 2018) by Delphine Smittarello
+%   - Fixed for the bugs with the matrix initialisation (March 2018) by Delphine Smittarello (IsTerre)
 %
 % PLEASE READ the README for more information.
 
