@@ -43,11 +43,11 @@ System requirements:
 4) In Matlab:
 
 ```sh
-computation_computation_Sentinel_SM('full_path_of_input_car')
+computation_computation_Sentinel_SM('full_path_of_input_card')
 ```
 or
 ```sh
-computation_Sentinel_SM('path_input_card.input',path_EXEC,path_MASTER,path_SLAVE,pol)
+computation_Sentinel_SM('full_path_of_input_card',path_EXEC,path_MASTER,path_SLAVE,pol)
 ```
 
 # An input card example:
