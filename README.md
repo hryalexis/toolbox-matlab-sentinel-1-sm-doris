@@ -3,7 +3,7 @@
   The Sentinel-1 SM Toolbox is a set of Matlab functions to easly compute the Sentinel-1 A/B interferograms in StripMap mode. The objective is to have a simplest file of parameters to run Doris 5.0. 
   
 The Toolbox contains: 
-  - computation_Sentinel_SM.m: main function ot run the interferogram computation
+  - computation_Sentinel_SM.m: main function to run the interferogram computation
   - read_data_Sentinel_SM.m: function to read the S1 data and the orbit files, to create the file for Doris 5.0
   - detection_orbit_files.m: function to detect the good orbit file in one directory 
   - readSent1Data.m: function to read the SLC images by Louis-Philippe Rousseau
