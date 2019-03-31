@@ -1,6 +1,6 @@
 # The Toolbox to compute the Sentinel-1 A/B in StripMap mode with Matlab and Doris 5.0
 
-  The Sentinel-1 SM Toolbox is a set of Matlab functions to easly compute the Sentinel-1 A/B interferograms in StripMap mode. The objective is to have a simpliest file of parameters to run Doris 5.0. 
+  The Sentinel-1 SM Toolbox is a set of Matlab functions to easly compute the Sentinel-1 A/B interferograms in StripMap mode. The objective is to have a simplest file of parameters to run Doris 5.0. 
   
 The Toolbox contains: 
   - computation_Sentinel_SM.m: main function ot run the interferogram computation
