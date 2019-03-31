@@ -37,8 +37,8 @@ System requirements:
 
 # How to compute a S1 StripMap interferogram?
 
-1) Download of two S1 StripMap images 
-2) Download of the orbit files (optionnal)
+1) Downloading of two S1 StripMap images 
+2) Downloading of the orbit files (optionnal)
 3) Design of the full input card or the incomplet input card
 4) In Matlab:
 
