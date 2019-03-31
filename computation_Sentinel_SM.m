@@ -1,11 +1,11 @@
 function computation_Sentinel_SM(varargin)
 % Major function to compute the interferogramme with Doris: 
-%  The function permit to link the Matlab and Doris. All interferometric
+%  The function permit to link Matlab to Doris. All interferometric
 %  computation will be made with Doris and the managmenent of the
 %  computation the reading of the data (SLC) and the DEM geometry products
 %  using Matlab language. 
 %
-% The objectif of this function is the simplicity of the using. The inputs
+% The objectif of this function is the simplicity of the use. The inputs
 % must be: 
 % - "path_input_cart" with the parameters of the computation. 
 % - "path_input_cart without the paths", "path of the executation directory",
