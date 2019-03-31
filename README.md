@@ -14,8 +14,8 @@ The Toolbox contains:
   
 The other requirements:
   - xml2struct.m
-  - ToolBox Envi for Matlab to create the UTM products
-  - ToolBox Mapping of Matlab to create the DEM geometry products
+  - ToolBox Envi for Matlab to create the UTM products (optionnal)
+  - ToolBox Mapping of Matlab to create the DEM geometry products (optionnal)
   - The readSent1Data.m function to read the SLC images by Louis-Philippe Rousseau
   - The getTIFFinfo.m function to read the tiff informations by Louis-Philippe Rousseau
 
@@ -37,10 +37,10 @@ System requirements:
 
 # How to compute a S1 StripMap interferogram
 
-1) Download of the two S1 StripMap SLC
+1) Download of two S1 StripMap images 
 2) Download of the orbit files (optionnal)
 3) Creating of the full input card or the incomplet input card
-4) In Matlab 
+4) In Matlab:
 
 ```sh
 computation_computation_Sentinel_SM('full_path_of_input_car')
@@ -65,25 +65,25 @@ Doris Parameters
 ***************************************************************************
 Path_of_Doris_processor:            /usr/local/Doris_5 #Directory of Doris core
 Path_of_Doris_function:             /usr/local/Doris_utility #Directory of Cpxfiddle function
-Path_of_MATLAB_Sentinel_Toolbox:    #Directory of Sentinel SM Toolbox
+Path_of_MATLAB_Sentinel_Toolbox:    ???? #Directory of Sentinel SM Toolbox
 ***************************************************************************
 Global parameters
 ***************************************************************************
-Path_for_the_excecution:    #Where do you can compute the interferogram
-Data_of_the_Master:         #Full path of the Master (.zip or .SAFE) 
-Data_of_the_Slave:          #Full path of the Slave (.zip or .SAFE) 
-Choice_of_the_polarition:   #vv, hh, vh, or hv 
+Path_for_the_excecution:    ???? #Where do you can compute the interferogram
+Data_of_the_Master:         ???? #Full path of the Master (.zip or .SAFE) 
+Data_of_the_Slave:          ???? #Full path of the Slave (.zip or .SAFE) 
+Choice_of_the_polarition:   vv #vv, hh, vh, or hv 
 
-Path_of_orbits:             #Directory of the orbit file 
+Path_of_orbits:             ???? #Directory of the orbit file 
 
-Name_of_the_input:          #date or #orbits
+Name_of_the_input:          date #date or #orbits
 Colormap_of_the_display:    /home/alexis/Documents/MATLAB/Sentinel_SM_toolbox/cmap_sar.csv
 RAM_Memory_(MB):            4000
 
 ***************************************************************************
 Parameters of the DEM
 ***************************************************************************
-Path_of_the_DEM:            #Full path of the DEM file 
+Path_of_the_DEM:            ???? #Full path of the DEM file 
 Number_of_lines:            1000
 Number_of_pixels:           1000
 Latitude_DEM:               0
