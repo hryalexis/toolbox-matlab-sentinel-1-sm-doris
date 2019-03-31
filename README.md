@@ -35,7 +35,7 @@ System requirements:
 2) Download of the Toolbox
 3) Download of the files from the Mathworks website
 
-# How to compute a S1 StripMap interferogram
+# How to compute a S1 StripMap interferogram?
 
 1) Download of two S1 StripMap images 
 2) Download of the orbit files (optionnal)
