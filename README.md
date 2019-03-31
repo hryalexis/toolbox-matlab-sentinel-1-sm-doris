@@ -165,8 +165,10 @@ Method_Geotiff:         natural
 Mode_O2I:               YES        Extr_Lidar2010_5m_BLID.r4.hdr #For the SNOV OI2
 ```
 
-# Authors / developers
+# Authors
 
-The contributors are:
+The authors are:
   - Alexis Hrysiewicz (Laboratoire Magmas et Volcans)
   - Delphine Smittarello (IsTerre)
+  
+The authors thank Louis-Philippe Rousseau for the reading functions of the Snetinel-1 SLC. 
