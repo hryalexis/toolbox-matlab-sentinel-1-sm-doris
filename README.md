@@ -171,4 +171,4 @@ The authors are:
   - Alexis Hrysiewicz (Laboratoire Magmas et Volcans)
   - Delphine Smittarello (IsTerre)
   
-The authors thank Louis-Philippe Rousseau for the reading functions of the Sentinel-1 SLC. 
+The authors thank Louis-Philippe Rousseau for the distribution of his functions. 
