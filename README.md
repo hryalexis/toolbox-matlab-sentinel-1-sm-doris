@@ -39,7 +39,7 @@ System requirements:
 
 1) Downloading of two S1 StripMap images 
 2) Downloading of the orbit files (optionnal)
-3) Design of the full input card or the incomplet input card
+3) Design of the full input card or the incomplete input card
 4) In Matlab:
 
 ```sh
