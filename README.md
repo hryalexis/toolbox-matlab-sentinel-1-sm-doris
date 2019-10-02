@@ -168,7 +168,7 @@ Mode_O2I:               YES        dem.hdr #For the SNOV OI2
 # Authors
 
 The authors are:
-  - Alexis Hrysiewicz (Laboratoire Magmas et Volcans)
-  - Delphine Smittarello (IsTerre)
+  - Alexis Hrysiewicz (Laboratoire Magmas et Volcans / OPGC / CNRS / IDR / INSU)
+  - Delphine Smittarello (IsTerre / UGA / CNRS / USMB / IRD / IFSTTAR)
   
 The authors thank Louis-Philippe Rousseau for the distribution of his functions. 
